@@ -11,6 +11,10 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("io.kotest:kotest-runner-junit5:$version")
+    testImplementation("io.kotest:kotest-assertions-core:$version")
+    testImplementation("io.kotest:kotest-property:$version")
+
     implementation("org.ow2.asm:asm:9.7")
     implementation("org.ow2.asm:asm-util:9.7")
 }
